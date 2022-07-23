@@ -58,6 +58,9 @@ markdown_extensions:
   - md_in_html
 
 extra:
+  analytics:
+    provider: google
+    property: G-J4Y5P8XZRY
   social:
   - icon: fontawesome/solid/globe
     link: https://www.rathnaschools.com
