@@ -1,0 +1,2025 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Free static site to learn programming languages from scratch">
+      
+      
+        <meta name="author" content="M RATHINAVELKUMAR">
+      
+      
+        <link rel="canonical" href="https://www.rathnaschools.com/python/inbuilt_functions/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Python Inbuilt Functions - RATHNA SCHOOLS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#abs-function" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="RATHNA SCHOOLS" class="md-header__button md-logo" aria-label="RATHNA SCHOOLS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RATHNA SCHOOLS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python Inbuilt Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Python
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About us
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../terms/" class="md-tabs__link">
+      Terms of use
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../policy/" class="md-tabs__link">
+      Privacy policy
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="RATHNA SCHOOLS" class="md-nav__button md-logo" aria-label="RATHNA SCHOOLS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    RATHNA SCHOOLS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Python Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_data_types/" class="md-nav__link">
+        Python Data Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_comments/" class="md-nav__link">
+        Python Comments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_variables/" class="md-nav__link">
+        Python Variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_operators/" class="md-nav__link">
+        Python Operators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_numbers/" class="md-nav__link">
+        Python Numbers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_strings/" class="md-nav__link">
+        Python Strings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string_functions/" class="md-nav__link">
+        String Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_lists/" class="md-nav__link">
+        Python Lists
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list_functions/" class="md-nav__link">
+        List Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_tuples/" class="md-nav__link">
+        Python Tuples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuple_functions/" class="md-nav__link">
+        Tuple Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_sets/" class="md-nav__link">
+        Python Sets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../set_functions/" class="md-nav__link">
+        Set Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_dictionary/" class="md-nav__link">
+        Python Dictionary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dict_functions/" class="md-nav__link">
+        Dict Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_keywords/" class="md-nav__link">
+        Python Keywords
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conditional_statement/" class="md-nav__link">
+        Conditional Statement
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../while_loop/" class="md-nav__link">
+        While Loop Statements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../for_loop/" class="md-nav__link">
+        For Loop Statements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_defined_function/" class="md-nav__link">
+        User Defined Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function_arguments/" class="md-nav__link">
+        Function Arguments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../special_parameters/" class="md-nav__link">
+        Special Parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lambda_functions/" class="md-nav__link">
+        Lambda Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Python Inbuilt Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Python Inbuilt Functions
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abs-function" class="md-nav__link">
+    Abs Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-function" class="md-nav__link">
+    All Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#any-function" class="md-nav__link">
+    Any Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asciiord-function" class="md-nav__link">
+    ASCII(Ord) Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bin-function" class="md-nav__link">
+    Bin Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bool-function" class="md-nav__link">
+    Bool Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoint-function" class="md-nav__link">
+    Breakpoint Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bytearray-function" class="md-nav__link">
+    Bytearray Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bytes-function" class="md-nav__link">
+    Bytes Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callable-function" class="md-nav__link">
+    Callable Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chr-function" class="md-nav__link">
+    Chr Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compile-function" class="md-nav__link">
+    Compile Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-function" class="md-nav__link">
+    Complex Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deltattr-function" class="md-nav__link">
+    Deltattr Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dict-function" class="md-nav__link">
+    Dict Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dir-function" class="md-nav__link">
+    Dir Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divmod-function" class="md-nav__link">
+    Divmod Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerate-function" class="md-nav__link">
+    Enumerate Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eval-function" class="md-nav__link">
+    Eval Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-function" class="md-nav__link">
+    Exec Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter-function" class="md-nav__link">
+    Filter Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-function" class="md-nav__link">
+    Format Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash-function" class="md-nav__link">
+    Hash Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hex-function" class="md-nav__link">
+    Hex Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#id-function" class="md-nav__link">
+    Id Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-function" class="md-nav__link">
+    Input Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iter-function" class="md-nav__link">
+    Iter Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locals-function" class="md-nav__link">
+    Locals Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-function" class="md-nav__link">
+    Map Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-function" class="md-nav__link">
+    Object Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repr-function" class="md-nav__link">
+    Repr Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reversed-function" class="md-nav__link">
+    Reversed Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slice-function" class="md-nav__link">
+    Slice Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zip-function" class="md-nav__link">
+    Zip Function
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes_objects/" class="md-nav__link">
+        Python Classes & Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_inheritance/" class="md-nav__link">
+        Python Inheritance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_abstraction/" class="md-nav__link">
+        Python Abstraction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_encapsulation/" class="md-nav__link">
+        Python Encapsulation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_polymorphism/" class="md-nav__link">
+        Python Polymorphism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_iterators/" class="md-nav__link">
+        Python Iterators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_generators/" class="md-nav__link">
+        Python Generators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_closures/" class="md-nav__link">
+        Python Closures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_decorators/" class="md-nav__link">
+        Python Decorators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_property/" class="md-nav__link">
+        Python Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_regex/" class="md-nav__link">
+        Python Regex
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_exceptions/" class="md-nav__link">
+        Exception Handling
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About us
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms/" class="md-nav__link">
+        Terms of use
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policy/" class="md-nav__link">
+        Privacy policy
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abs-function" class="md-nav__link">
+    Abs Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-function" class="md-nav__link">
+    All Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#any-function" class="md-nav__link">
+    Any Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asciiord-function" class="md-nav__link">
+    ASCII(Ord) Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bin-function" class="md-nav__link">
+    Bin Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bool-function" class="md-nav__link">
+    Bool Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breakpoint-function" class="md-nav__link">
+    Breakpoint Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bytearray-function" class="md-nav__link">
+    Bytearray Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bytes-function" class="md-nav__link">
+    Bytes Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callable-function" class="md-nav__link">
+    Callable Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chr-function" class="md-nav__link">
+    Chr Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compile-function" class="md-nav__link">
+    Compile Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-function" class="md-nav__link">
+    Complex Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deltattr-function" class="md-nav__link">
+    Deltattr Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dict-function" class="md-nav__link">
+    Dict Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dir-function" class="md-nav__link">
+    Dir Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divmod-function" class="md-nav__link">
+    Divmod Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerate-function" class="md-nav__link">
+    Enumerate Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eval-function" class="md-nav__link">
+    Eval Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-function" class="md-nav__link">
+    Exec Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter-function" class="md-nav__link">
+    Filter Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-function" class="md-nav__link">
+    Format Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash-function" class="md-nav__link">
+    Hash Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hex-function" class="md-nav__link">
+    Hex Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#id-function" class="md-nav__link">
+    Id Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-function" class="md-nav__link">
+    Input Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iter-function" class="md-nav__link">
+    Iter Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locals-function" class="md-nav__link">
+    Locals Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-function" class="md-nav__link">
+    Map Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-function" class="md-nav__link">
+    Object Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repr-function" class="md-nav__link">
+    Repr Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reversed-function" class="md-nav__link">
+    Reversed Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slice-function" class="md-nav__link">
+    Slice Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zip-function" class="md-nav__link">
+    Zip Function
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Python Inbuilt Functions</h1>
+
+<p>The top must known inbuilt function in python are</p>
+<h2 id="abs-function"><strong>Abs Function</strong></h2>
+<p>Abs function helps to return the absolute value of given number</p>
+<pre><code>#Abs Function
+input_value = -50
+
+output_value = abs(input_value)
+print(output_value)
+</code></pre>
+<p>Output</p>
+<pre><code>50
+</code></pre>
+<h2 id="all-function"><strong>All Function</strong></h2>
+<p>All function checks all the elements in the given iterable is true or not</p>
+<pre><code>#All Function
+input_value = [10, 20, 30, 40]
+
+output_value = all(input_value)
+print(output_value)
+</code></pre>
+<p>Output</p>
+<pre><code>True
+</code></pre>
+<p>Zero or False value in the given input returns false</p>
+<pre><code>#All Function
+input_value = [10, 20, 30, 0]
+
+output_value = all(input_value)
+print(output_value)
+</code></pre>
+<p>Output</p>
+<pre><code>False
+</code></pre>
+<h2 id="any-function"><strong>Any Function</strong></h2>
+<p>Any function returns true if any one of the element is true in given iterable</p>
+<pre><code>#Any Function
+input_value = [10, 20, 30, 0]
+
+output_value = any(input_value)
+print(output_value)
+</code></pre>
+<p>Output</p>
+<pre><code>True
+</code></pre>
+<h2 id="asciiord-function"><strong>ASCII(Ord) Function</strong></h2>
+<p>Ord function helps to return the ASCII (American Standard Code for Information value of given character Interchange)</p>
+<pre><code>#Ord Function
+input_value = "R"
+
+output_value = ord(input_value)
+print(output_value)
+</code></pre>
+<p>Output</p>
+<pre><code>82
+</code></pre>
+<h2 id="bin-function"><strong>Bin Function</strong></h2>
+<p>Bin function helps to convert the decimal number to a binary string. Result have <code>ob</code> prefix which indicates the binary format</p>
+<pre><code>#Bin Function
+input_value = 10
+
+output_value = bin(input_value)
+print(output_value)
+</code></pre>
+<p>Output</p>
+<pre><code>0b1010
+</code></pre>
+<h2 id="bool-function"><strong>Bool Function</strong></h2>
+<p>Bool functions returns the Boolean value (i.e.) either true or false</p>
+<pre><code>#Bool Function
+input_value1 = 0
+input_value2 = 1
+
+output_value1 = bool(input_value1)
+print(output_value1)
+
+output_value2 = bool(input_value2)
+print(output_value2)
+</code></pre>
+<p>Output</p>
+<pre><code>False
+True
+</code></pre>
+<h2 id="breakpoint-function"><strong>Breakpoint Function</strong></h2>
+<p>In python 3.7, breakpoint function has introduced which helps to invoke breakpoint without import of pdb module. Previously we can use the pdb module, in which pdb.set_trace() function act as a breakpoint</p>
+<pre><code>#Breakpoint Function
+input_value1 = 0
+input_value2 = 1
+
+output_value1 = bool(input_value1)
+print(output_value1)
+
+
+output_value2 = bool(input_value2)
+print("Want to continue? Press c and Enter")
+breakpoint()
+print(output_value2)
+</code></pre>
+<p>Output</p>
+<pre><code>False
+Want to continue? Press c and Enter
+&gt; &lt;string&gt;(12)&lt;module&gt;()
+(Pdb) c
+True
+</code></pre>
+<h2 id="bytearray-function"><strong>Bytearray Function</strong></h2>
+<p>As per python documentation, Bytearray function Return a new array of bytes. The bytearray type is a mutable sequence of integers in the range 0 &lt; x &lt; 256.</p>
+<p><strong>source [optional]: byte array initializer</strong></p>
+<p><strong>encoding [optional]: string encoding method</strong></p>
+<p><strong>errors [optional]: steps to perform during failure of encoding</strong></p>
+<pre><code>#ByteArray Function
+input_data = "RATHNA SCHOOLS"
+
+output1 = bytearray(input_data, "utf-8")
+print(output1)
+
+output2 = bytearray(input_data, "utf-16")
+print(output2)
+</code></pre>
+<p>Output</p>
+<pre><code>bytearray(b'RATHNA SCHOOLS')
+bytearray(b'\xff\xfeR\x00A\x00T\x00H\x00N\x00A\x00 \x00S\x00C\x00H\x00O\x00O\x00L\x00S\x00')
+</code></pre>
+<h2 id="bytes-function"><strong>Bytes Function</strong></h2>
+<p>Byte function is similar to bytearray but they returns a immutable bytes object, so it cannot be changed once declared</p>
+<pre><code>#Bytes Function
+input_data = "RATHNA SCHOOLS"
+
+output1 = bytes(input_data, "utf-8")
+print(output1)
+
+output2 = bytes(input_data, "utf-16")
+print(output2)
+</code></pre>
+<p>Output</p>
+<pre><code>b'RATHNA SCHOOLS'
+b'\xff\xfeR\x00A\x00T\x00H\x00N\x00A\x00 \x00S\x00C\x00H\x00O\x00O\x00L\x00S\x00'
+</code></pre>
+<h2 id="callable-function"><strong>Callable Function</strong></h2>
+<p>Callable function helps to check whether the given object argument is callable or not</p>
+<pre><code>#Function1
+def add():
+    return "add function"
+
+#Function2
+def sub():
+    return "sub function"
+
+#Variable
+mul = "mul function"
+
+print(callable(add))
+print(callable(sub))
+#Its variable, not a callable function
+print(callable(mul))
+</code></pre>
+<p>Output</p>
+<pre><code>True
+True
+False
+</code></pre>
+<h2 id="chr-function"><strong>Chr Function</strong></h2>
+<p>Chr function helps to convert the ASCII value to its original character </p>
+<pre><code>#Chr Function
+input_data = "R"
+
+#convert to ASCII value
+output_value1 = ord(input_data)
+print(output_value1)
+
+#Convert back to original character
+output_value2 = chr(output_value1)
+print(output_value2)
+</code></pre>
+<p>Output</p>
+<pre><code>82
+R
+</code></pre>
+<h2 id="compile-function"><strong>Compile Function</strong></h2>
+<p>Compile method helps to convert the source code to an executable, so that it can execute whenever required</p>
+<p><strong>syntax - compile(source, filename, mode)</strong></p>
+<p><strong>source - source code (it can single line or complete block</strong></p>
+<p><strong>filename - source code reading filename, if not we can pass random name</strong></p>
+<p><strong>mode - eval mode in case of single line, exec can use for multi line source code</strong></p>
+<pre><code>#Compile Function
+source_code = "print('RATHNA SCHOOLS')"
+
+compile_code = compile(source_code, "Test", "eval")
+
+eval(compile_code)
+</code></pre>
+<p>Output</p>
+<pre><code>RATHNA SCHOOLS
+</code></pre>
+<h2 id="complex-function"><strong>Complex Function</strong></h2>
+<p>Complex function used to covert the string or number into a complex number </p>
+<pre><code>#Complex Function
+input_data1 = complex(5,10)
+print(input_data1)
+
+input_data2 = complex(5)
+print(input_data2)
+</code></pre>
+<p>Output</p>
+<pre><code>(5+10j)
+(5+0j)
+</code></pre>
+<h2 id="deltattr-function"><strong>Deltattr Function</strong></h2>
+<p>Deltattr function helps to delete the named attribute from the given object which should be allows it</p>
+<pre><code>#Delattr Function
+class Score:
+    python = 100
+    js = 90
+    java = 80
+
+#Object Creation
+score_object = Score()
+
+#Before Deletion
+print(score_object.python)
+print(score_object.js)
+print(score_object.java)
+
+#After Deletion
+delattr(Score, 'java')
+print(score_object.python)
+print(score_object.js)
+print(score_object.java)
+</code></pre>
+<p>Output</p>
+<pre><code>100
+90
+80
+100
+90
+Traceback (most recent call last):
+File "&lt;string&gt;", line 19, in &lt;module&gt;
+AttributeError: 'Score' object has no attribute 'java'
+</code></pre>
+<h2 id="dict-function"><strong>Dict Function</strong></h2>
+<p>Dict Function helps to create a new dictionary</p>
+<pre><code>#Dict Function
+input_dict = dict(
+    Name = "Rathna Schools",
+    Language = "Python"
+    )
+
+print(input_dict)
+</code></pre>
+<p>Output</p>
+<pre><code>{'Name': 'Rathna Schools', 'Language': 'Python'}
+</code></pre>
+<h2 id="dir-function"><strong>Dir Function</strong></h2>
+<p>Dir function is one of the most important built-in function in python.</p>
+<p>without parameter -  It helps to return the list of name in current local scope</p>
+<p>with parameter - it helps to list the valid methods of given object in current local scope </p>
+<pre><code>#Dir Function
+print("Without parameter")
+print(dir())
+
+print("With Parameter")
+input_data = list()
+print(dir(input_data))
+</code></pre>
+<p>Output</p>
+<pre><code>Without parameter
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__']
+With Parameter
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+</code></pre>
+<h2 id="divmod-function"><strong>Divmod Function</strong></h2>
+<p>Divmod function takes two arguments and return its quotient and remainder</p>
+<pre><code>#Divmod Function
+input_value = 19
+target_value = 3
+
+result = divmod(input_value, target_value)
+print(result)
+</code></pre>
+<p>Output</p>
+<pre><code>(6, 1)
+</code></pre>
+<h2 id="enumerate-function"><strong>Enumerate Function</strong></h2>
+<p>Enumerate function helps to create enumerate object by adding counter to iterable from 0 index</p>
+<pre><code>#Enumerate Function
+month_list = ["Jan", "Feb", "Mar"]
+
+result = list(enumerate(month_list))
+print(result)
+</code></pre>
+<p>Output</p>
+<pre><code>[(0, 'Jan'), (1, 'Feb'), (2, 'Mar')]
+</code></pre>
+<h2 id="eval-function"><strong>Eval Function</strong></h2>
+<p>Eval function helps to evaluates the single expression and return the calculated result of that corresponding expression</p>
+<pre><code>#Eval Function
+statement = "print('Rathna Schools')"
+eval(statement)
+</code></pre>
+<p>Output</p>
+<pre><code>Rathna Schools
+</code></pre>
+<h2 id="exec-function"><strong>Exec Function</strong></h2>
+<p>Exec function helps to evaluates the one or more expression and return the calculated result of that corresponding expression or statement</p>
+<pre><code>#Exec Function
+statement = "for _ in range(0,3):\n\tprint('Rathna Schools')"
+exec(statement)
+</code></pre>
+<p>Output</p>
+<pre><code>Rathna Schools
+Rathna Schools
+Rathna Schools
+</code></pre>
+<h2 id="filter-function"><strong>Filter Function</strong></h2>
+<p>Filter function usually accepts two parameter, a function which should check each elements and the sequence which is needs to gets filtered </p>
+<pre><code>#Filter Function
+def find_even(num):
+    if num%2==0: return True
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = list(filter(find_even, input_list))
+print(result)
+</code></pre>
+<p>Output</p>
+<pre><code>[2, 4, 6, 8, 10]
+</code></pre>
+<h2 id="format-function"><strong>Format Function</strong></h2>
+<p>Format function helps to handle the complex string formatting representation easily in python</p>
+<pre><code>input_name = "Rathna Schools"
+
+#Format Function Different Use Cases
+print("Learn Python - {0}".format(input_name))
+print("Learn Python - {}".format(input_name))
+print("The sum of {0} + {1} is {2}".format(50, 100, 50+100))
+print("The sum of {} + {} is {}".format(50, 100, 50+100))
+print("The sum of {num1} + {num2} is {result}".format(num1=50, num2=100, result=50+100))
+print("The sum of {num1} + {num2} is {result}".format(num2=100, result=50+100, num1=50))
+</code></pre>
+<p>Output</p>
+<pre><code>Learn Python - Rathna Schools
+Learn Python - Rathna Schools
+The sum of 50 + 100 is 150
+The sum of 50 + 100 is 150
+The sum of 50 + 100 is 150
+The sum of 50 + 100 is 150
+</code></pre>
+<h2 id="hash-function"><strong>Hash Function</strong></h2>
+<p>Hash function helps to convert the given immutable data into hashable value</p>
+<pre><code>#Hash Function
+input_name = "Rathna Schools"
+encoded_result = hash(input_name)
+#Every time generate new value
+print(encoded_result)
+
+#Immutable data raises exception
+input_list = [1, 2, 3, 4, 5]
+encoded_list = hash(input_list)
+print(encoded_list)
+</code></pre>
+<p>Output</p>
+<pre><code>6055507806959227419
+Traceback (most recent call last):
+File "&lt;string&gt;", line 9, in &lt;module&gt;
+TypeError: unhashable type: 'list'
+</code></pre>
+<h2 id="hex-function"><strong>Hex Function</strong></h2>
+<p>Hex function helps to covert the given integer number to hexa decimal value</p>
+<pre><code>#Hex Function
+input_num = 100
+result = hex(input_num)
+print(result)
+</code></pre>
+<p>Output</p>
+<pre><code>0x64
+</code></pre>
+<h2 id="id-function"><strong>Id Function</strong></h2>
+<p>Id function helps to return the address of the given object in memory. As per python documentation, two objects with non-overlapping lifetimes may have the same id value.</p>
+<pre><code>#Id Function
+input_num1 = 100
+result1 = id(input_num1)
+print(result1)
+
+#Immutable data types with same value, have same memory location
+input_num2 = 100
+result2 = id(input_num2)
+print(result2)
+
+#If we change the value, then memory location changes
+input_num2 = 50
+result2 = id(input_num2)
+print(result2)
+</code></pre>
+<p>Output</p>
+<pre><code>9792160
+9792160
+9790560
+</code></pre>
+<h2 id="input-function"><strong>Input Function</strong></h2>
+<p>input() helps to interact with user and get the user's input in string format</p>
+<pre><code>#Input Function
+input_name = input("Please enter the name : ")
+print(input_name)
+</code></pre>
+<p>Output</p>
+<pre><code>Please enter the name : Rathna Schools
+Rathna Schools
+</code></pre>
+<h2 id="iter-function"><strong>Iter Function</strong></h2>
+<p>Iter function helps to convert the given sequence to iterator object. To access the elements in iterator we can use the next() function</p>
+<pre><code>#Iter Function
+months = ["Jan" , "Feb", "Mar", "Apr"]
+iter_months = iter(months)
+try:
+    while iter_months:
+        print(next(iter_months))
+except StopIteration:
+    print("completed")
+</code></pre>
+<p>Output</p>
+<pre><code>Jan
+Feb
+Mar
+Apr
+completed
+</code></pre>
+<h2 id="locals-function"><strong>Locals Function</strong></h2>
+<p>Locals function helps to return a dict value of current local symbol table</p>
+<pre><code>#Locals Function
+def func_without_local():
+    print(locals())
+
+def func_with_local():
+    name = "Rathna Schools"
+    print(locals())
+
+#Return empty dict
+func_without_local()
+
+#Return local variable dict
+func_with_local()
+</code></pre>
+<p>Output</p>
+<pre><code>{}
+{'name': 'Rathna Schools'}
+</code></pre>
+<h2 id="map-function"><strong>Map Function</strong></h2>
+<p>Map function helps to apply the function and yield the results of each item in given sequence</p>
+<pre><code>#Map Function
+def two_multiple(num):
+    return num*2
+
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = list(map(two_multiple, input_list))
+print(result)
+</code></pre>
+<p>Output</p>
+<pre><code>[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+</code></pre>
+<h2 id="object-function"><strong>Object Function</strong></h2>
+<p>Object function helps to return a new feature less object which can be a base of all classes</p>
+<pre><code>#Object Function
+obj_example =  object()
+print(type(obj_example))
+print(id(obj_example))
+</code></pre>
+<p>Output</p>
+<pre><code>&lt;class 'object'&gt;
+140529277524880
+</code></pre>
+<h2 id="repr-function"><strong>Repr Function</strong></h2>
+<p>Repr functions are similar to str() function but it return the printable string representation of the given object</p>
+<pre><code>#Repr Function
+input_name = "Rathna's Schools"
+print(str(input_name))
+print(repr(input_name))
+</code></pre>
+<p>Output</p>
+<pre><code>Rathna's Schools
+"Rathna's Schools"
+</code></pre>
+<h2 id="reversed-function"><strong>Reversed Function</strong></h2>
+<p>Reversed function helps to reverse the given iterable and returns the reversed iterator</p>
+<pre><code>#Reversed Function
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list(reversed(input_list)))
+</code></pre>
+<p>Output</p>
+<pre><code>[9, 8, 7, 6, 5, 4, 3, 2, 1]
+</code></pre>
+<h2 id="slice-function"><strong>Slice Function</strong></h2>
+<p>Slice function helps to return slice object from any sequence object like string, list, tuple etc..</p>
+<p><strong>Syntax</strong></p>
+<p><strong>slice(start, stop, step)</strong></p>
+<pre><code>#Slice Function
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#Different Use Cases
+print(input_list[0:5])
+print(input_list[3:8])
+print(input_list[0:10:2])
+</code></pre>
+<p>Output</p>
+<pre><code>[1, 2, 3, 4, 5]
+[4, 5, 6, 7, 8]
+[1, 3, 5, 7, 9]
+</code></pre>
+<h2 id="zip-function"><strong>Zip Function</strong></h2>
+<p>zip(*iterable) function helps to return a ZIP object. we can pass multiple iterables as parameter to ZIP function in order to create a single zip object</p>
+<pre><code>#Zip Function
+index_list = [1, 2, 3, 4, 5]
+month_list = ["Jan", "Feb", "Mar", "Apr", "May"]
+
+for index, month in zip(index_list, month_list):
+    print(index, month)
+</code></pre>
+<p>Output</p>
+<pre><code>1 Jan
+2 Feb
+3 Mar
+4 Apr
+5 May
+</code></pre>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../lambda_functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lambda Functions" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Lambda Functions
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../classes_objects/" class="md-footer__link md-footer__link--next" aria-label="Next: Python Classes &amp; Objects" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Python Classes & Objects
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.rathnaschools.com" target="_blank" rel="noopener" title="www.rathnaschools.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.1-20.4-4.2-41.8-4.2-64 0-22.2 2.1-43.6 4.2-64h185.4c2.1 20.4 3.3 41.8 3.3 64zm151.9-64c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42.9 3.2-64 0-22-1.1-43.4-3.2-64h123.1zm-10.5-32H376.7c-10-63.86-29.8-117.38-55.3-151.558C399.8 29.09 463.4 85.94 493.4 160zm-149.1 0H167.7c6.1-36.4 15.5-68.62 27-94.65 10.5-23.61 22.2-40.74 33.5-51.54C239.4 3.178 248.7 0 256 0c7.3 0 16.6 3.178 27.8 13.81 11.3 10.8 23 27.93 33.5 51.54 11.5 26.03 20.9 58.25 27 94.65zm-325.69 0C48.59 85.94 112.2 29.09 190.6 8.442 165.1 42.62 145.3 96.14 135.3 160H18.61zm112.59 32c-2.1 20.6-4.1 42-4.1 64 0 21.1 2 43.4 4.1 64H8.065C2.8 299.5 0 278.1 0 256s2.8-43.5 8.065-64H131.2zm63.5 254.6c-11.5-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.7-22.2 40.8-33.5 51.6-11.2 10.6-20.5 13.8-28.7 13.8-6.4 0-15.7-3.2-26.9-13.8-11.3-10.8-23-27.9-33.5-51.6zm-4.1 57C112.2 482.9 48.59 426.1 18.61 352H135.3c10 63.9 29.8 117.4 55.3 151.6zm130.8 0c25.5-34.2 45.3-87.7 55.3-151.6h116.7c-30 74.1-93.6 130.9-172 151.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
