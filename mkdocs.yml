@@ -1,0 +1,63 @@
+site_name: RATHNA SCHOOLS
+site_url: https://www.rathnaschools.com
+site_author: M RATHINAVELKUMAR
+site_description: >-
+  Free static site to learn programming languages from scratch
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: index.md
+  - Python:
+    - Python Introduction: python/index.md
+    - Python Data Types: python/python_data_types.md
+    - Python Comments: python/python_comments.md
+    - Python Variables: python/python_variables.md
+    - Python Operators: python/python_operators.md
+    - Python Numbers: python/python_numbers.md
+    - Python Strings: python/python_strings.md
+    - String Functions: python/string_functions.md
+    - Python Lists: python/python_lists.md
+    - List Functions: python/list_functions.md
+    - Python Tuples: python/python_tuples.md
+    - Tuple Functions: python/tuple_functions.md
+    - Python Sets: python/python_sets.md
+    - Set Functions: python/set_functions.md
+    - Python Dictionary: python/python_dictionary.md
+    - Dict Functions: python/dict_functions.md
+    - Python Keywords: python/python_keywords.md
+    - Conditional Statement: python/conditional_statement.md
+    - While Loop Statements: python/while_loop.md
+    - For Loop Statements: python/for_loop.md
+    - User Defined Functions: python/user_defined_function.md
+    - Function Arguments: python/function_arguments.md
+    - Special Parameters: python/special_parameters.md  
+    - Lambda Functions: python/lambda_functions.md  
+    - Python Inbuilt Functions: python/inbuilt_functions.md
+    - Python Classes & Objects: python/classes_objects.md
+    - Python Inheritance: python/python_inheritance.md
+    - Python Abstraction: python/python_abstraction.md
+    - Python Encapsulation: python/python_encapsulation.md
+    - Python Polymorphism: python/python_polymorphism.md
+    - Python Iterators: python/python_iterators.md
+    - Python Generators: python/python_generators.md
+    - Python Closures: python/python_closures.md
+    - Python Decorators: python/python_decorators.md
+    - Python Property: python/python_property.md
+    - Python Regex: python/python_regex.md
+    - Exception Handling: python/python_exceptions.md
+  - About us: about.md
+  - Terms of use : terms.md
+  - Privacy policy: policy.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+  - icon: fontawesome/solid/globe
+    link: https://www.rathnaschools.com
