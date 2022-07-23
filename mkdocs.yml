@@ -6,7 +6,6 @@ site_description: >-
 
 theme:
   name: material
-  custom_dir: overrides
   features:
     - navigation.tabs
 
@@ -65,3 +64,6 @@ extra:
   social:
   - icon: fontawesome/solid/globe
     link: https://www.rathnaschools.com
+
+extra_javascript:
+  - javascripts/extra.js
